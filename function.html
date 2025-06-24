@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Button Function</title>
+    </head>
+    <body>
+        <button onclick="mult(5,10)">Execute JS function</button>
+        <br><br>
+        <button onclick="multi(5)">Multiple with default</button>
+        <br><br>
+        <button onclick="myFunction()">click me!</button>
+        <p id="demo"></p>
+
+        <script>
+            function mult(x,y){
+                document.write(x*y);
+            }
+
+            function multi(x,y){
+                if (y===undefined){
+                    y=2;
+                }
+                document.write(x*y);
+            }
+
+            function myFunction(){
+                var a=5;
+                var b=7;
+                document.getElementById("demo").innerHTML=a*b;
+            }
+        </script>
+    </body>
+</html>
